@@ -71,3 +71,12 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2em 0; }
 .comments { margin-top: 3em; padding-top: 1.5em; border-top: 1px solid var(--border); }
 
 footer { margin-top: 40px; color: #aaa; font-size: 0.85em; text-align: center; }
+
+/* 文章里的图片：自动适配页面宽度 + 圆角 + 居中 */
+.content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 1em auto;
+}
