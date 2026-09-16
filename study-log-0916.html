@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>学习日志：2026年9月16日</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    MathJax = { tex: { inlineMath: [['$','$'], ['\\(','\\)']] } };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <h1 class="title">学习日志：2026年9月16日</h1>
+    <p class="meta">2026年9月16日 · 主题：日记</p>
+
+    <!-- ═══════ 正文写作区：从这里往下写 markdown ═══════ -->
+    <script type="text/markdown" id="markdown-content">
+# 今天做了什么
+
+今天太忙了，主要时间花在开会+学生会事情上，留给自己学习的时间很少。
+
+## 学习
+
+- 只抽空在中午把高数第二节课的内容看完了
+- MIT 18.01 的新内容没来得及推进
+
+## 一点感想
+
+> 是真的忙啊，是那种各种事情都在空中飘着但是却抓不到的感觉，这时候才发现静下心来学习的时间是多么的宝贵。<br>
+> 事情很多，但是我把他们都一一的列了出来，选择那些时间紧且重要的事情，逐个击破，便不觉毫无头绪了。这和学习也是一样的吧，认真把每个事情都击败！
+
+## 学习内容
+
+学习了Removable discontinuity : limit from both left & right are equal <br>
+eg1: $f(x)=\dfrac{sinx}{x}$ <br>
+      $f(0)$ is undifined , but $\lim_{x \to 0}f(x)=1$ <br>
+eg2: $f(x)=\dfrac{1-cosx}{x}$ <br>
+      $f(0)$ is undifined , but $\lim_{x \to 0}f(x)=0$
+      
+## 明天计划
+
+- 把 9 月 15 日没搞懂的 GPS 误差计算弄明白
+- 继续 MIT 18.01 下一讲
+- 如果可以的话我想学习一点C语言
+
+    </script>
+    <!-- ═══════ 正文写作区结束 ═══════ -->
+
+    <div class="content" id="rendered"></div>
+
+    <div class="comments">
+      <script src="https://giscus.app/client.js"
+        data-repo="0xsolst/0xsolst.github.io"
+        data-repo-id="R_kgDOUb4CRg"
+        data-category="General""
+        data-category-id="DIC_kwDOUb4CRs4DFvc9"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </div>
+
+    <p class="back"><a href="index.html">← 返回首页</a></p>
+  </div>
+
+  <script>
+    const src = document.getElementById('markdown-content').textContent;
+    document.getElementById('rendered').innerHTML = marked.parse(src);
+  </script>
+</body>
+</html>
