@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文章标题</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    MathJax = { tex: { inlineMath: [['$','$'], ['\\(','\\)']] } };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <h1 class="title">文章标题</h1>
+    <p class="meta">2026年9月16日 · 主题：xxx</p>
+
+    <!-- ═══════ 正文写作区：从这里往下写 markdown ═══════ -->
+    <script type="text/markdown" id="markdown-content">
+# 第一个小标题
+
+正文用 **两个星号** 加粗，用 *一个星号* 斜体。
+
+- 列表项一
+- 列表项二
+
+> 引用块：适合写重点提醒。
+
+行内代码用反引号包起来：`printf("hello")`
+    </script>
+    <!-- ═══════ 正文写作区结束 ═══════ -->
+
+    <div class="content" id="rendered"></div>
+
+    <div class="comments">
+      <script src="https://giscus.app/client.js"
+        data-repo="0xsolst/0xsolst.github.io"
+        data-repo-id="R_kgDOUb4CRg"
+        data-category="General""
+        data-category-id="DIC_kwDOUb4CRs4DFvc9"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </div>
+
+    <p class="back"><a href="index.html">← 返回首页</a></p>
+  </div>
+
+  <script>
+    const src = document.getElementById('markdown-content').textContent;
+    document.getElementById('rendered').innerHTML = marked.parse(src);
+  </script>
+</body>
+</html>
