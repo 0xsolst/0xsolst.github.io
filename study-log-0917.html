@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>学习日志 · 9 月 17 日</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    MathJax = { tex: { inlineMath: [['$','$'], ['\\(','\\)']] } };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <h1 class="title">学习日志 · 9 月 17 日</h1>
+    <p class="meta">2026年9月17日 · 主题：高数</p>
+
+    <!-- ═══════ 正文写作区：从这里往下写 markdown ═══════ -->
+    <script type="text/markdown" id="markdown-content">
+# 学习日志 · 9 月 17 日
+
+## the LIST of what i learnt today
+- $\lim{x \to \0}\dfrac{sinx}{x} = 1$和$\lim{x \to 0}\dfrac{1-cosx}{x} = 0$的证明
+- 用上面两个极限推导$$\dfrac{d}{dx}sinx = cosx$$ $$\dfrac{d}{dx}cosx = -sinx$$
+- geometric proof of the derivative of $sinx$ and $cosx$
+- production,quotient,and chain rule of derivative
+- implicit differentiation
+- inverse function
+
+## 我讲解一遍
+- · $$\dfrac{d}{dx}sinx = cosx$$
+      $$\dfrac{d}{dx}sinx$$ $$= \lim{\Deltax \to 0}\dfrac{sin(x+\Delta)-sinx}{\Deltax}$$
+      $$= \lim{\Deltax \to 0}\dfrac{sinxcos\Deltax+cosxsin\Deltax-sinx}{\Deltax}$$
+      $$= \lim{\Deltax \to 0}\sinxdfrac{cos\Deltax-1}{\Deltax}+cosx\dfrac{sin\Deltax}{\Deltax}$$
+      $$= cosx$$
+  ·$$\dfrac{d}{dx}cosx = -sinx$$的证明同理
+- ·$$\dfrac{d^n}{dx^n}x^n = n!$$
+      由此或许可以联想1/2阶导数？或者1/2的阶乘？
+- ·implicit differentiation
+      ·EX1:$$x^2+y^2=1$$
+        $$\dfrac{d}{dx}(x^2+y^2)=\dfrac{d}{dx}1$$
+        $$2x+2yy'=0$$
+        $$y'=-\dfrac{x}{y}
+- inverse functions
+      ·if $y=f(x)$ and $x=g(y)$,then$g(f(x))=x$ or $f(g(x))=x$,$g=f^-1$ and $f=g^-1$
+      ·EX1:$$tanx & tan^-1x$$
+        for $y=tan^-1x$
+        $$tany=x$$
+        $$\dfrac{d}{dx}tany=\dfrac{d}{dx}x$$
+        $$\dfrac{1}{cos^2y}y'=1$$
+        $$y'=cos^2y$$
+        由三角恒等关系可得
+        $$y'=\dfrac{1}{x^2+1}
+      ·EX2:$$sinx & sin^-1x$$
+        $$y=arcsinx$
+        $$siny=x$$
+        $$\dfrac{d}{dx}siny=\dfrac{d}{dx}x$$
+        $$(cosy)y'=1$$
+        $$y'=\dfrac{1}{\sqrt{1-x^2}}$$
+
+## 感想
+- 今天学的反函数、隐函数求导都是我高中想要学习却没时间/来不及学习的内容，似乎有点怀念高中那段每晚被数学折磨的日子了
+- 虽然我每天学习的内容很少，但我相信：不积跬步，无以至千里。
+- 我欲乘风归去，又恐琼楼玉宇，高处不胜寒。
+- A MORE MEANING DAY IS WAITING FOR ME
+      
+
+## 明天的计划
+- 继续听高数啦EXPONENTIAL & LOOGARITHMS
+- C语言最近好久没学了
+- 或许Linux？
+- 要记得背单词啊！
+    </script>
+    <!-- ═══════ 正文写作区结束 ═══════ -->
+
+    <div class="content" id="rendered"></div>
+
+    <!-- 评论区 -->
+    <div class="comments">
+      <script src="https://giscus.app/client.js"
+        data-repo="0xsolst/0xsolst.github.io"
+        data-repo-id="PASTE_REPO_ID"
+        data-category="PASTE_CATEGORY"
+        data-category-id="PASTE_CATEGORY_ID"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </div>
+
+    <p class="back"><a href="index.html">← 返回首页</a></p>
+  </div>
+
+  <script>
+    const src = document.getElementById('markdown-content').textContent;
+    document.getElementById('rendered').innerHTML = marked.parse(src);
+  </script>
+</body>
+</html>
