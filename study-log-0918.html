@@ -32,13 +32,14 @@
       $$=\lim_{\Delta x \to 0 }\dfrac{a^{x+\Delta x}-a^x}{\Delta x}$$
       $$=\lim_{\Delta x \to 0}a^x\dfrac{a^{\Delta x}-1}{\Delta x}$$
       $$=a^x\lim_{\Delta x \to 0 }\dfrac{a^{\Delta x}-1}{\Delta x}$$
-      let $M(a)=\lim_{\Delta x \to 0 }\dfrac{a^{\Delta x}-1}{\Delta x}$<br>
-      then $\dfrac{d}{dx}a^x=a^x·M(a)$<br>
-      $\dfrac{d}{dx}a^x|_{x=0}=a^0·M(a)=M(a)$<br>
+      let $$M(a)=\lim_{\Delta x \to 0 }\dfrac{a^{\Delta x}-1}{\Delta x}$$
+      then $$\dfrac{d}{dx}a^x=a^x·M(a)$$
+      $$\dfrac{d}{dx}a^x|_{x=0}=a^0·M(a)=M(a)$$
       The question : What is $M(a)$ ?<br>
+      <br>
       **First of all** , <br>
       let's define base '$e$' as the unique number so that $M(e)=1$<br>
-      we have $\dfrac{d}{dx}e^x=e^x·M(e)=e^x$
+      we have $\dfrac{d}{dx}e^x=e^x·M(e)=e^x$ <br>
       **second** , <br>
       we need to consider the inverse function of  $y=e^x$<br>
       we define it as  $w=lnx$<br>
@@ -66,12 +67,12 @@
       $$(lnv)'=\dfrac{v'}{v}=1+lnx$$
       $$\dfrac{d}{dx}x^x=x^x(1+lnx)$$
     the method we sove it is ***moving exponents***<br>
-- yet we still don't l=know what is '$e$'<br>
+- yet we still don't know what is '$e$'<br>
       let's see something different:<br>
       $$\lim_{n \to +\infty}(1+\dfrac{1}{n})^n$$
       let's use the method we called ***moving expoenents***:<br>
       $$ln((1+\dfrac{1}{n})^n)=nln(1+\dfrac{1}{n})$$
-      if we take $\Delta x$ as $\dfrac{1}{n}$<br>
+      if we take $\Delta x$ as $\dfrac{1}{n}$ (as when $n \to =\infty$ , $\Delta x \to 0$)<br><br>
       we get :
       $$(1+\dfrac{1}{n})^n=\dfrac{1}{\Delta x}ln(1+\Delta x)$$
       something different emerging:
