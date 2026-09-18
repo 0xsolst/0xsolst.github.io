@@ -42,50 +42,60 @@
       we have $\dfrac{d}{dx}e^x=e^x·M(e)=e^x$ <br>
       **second** , <br>
       we need to consider the inverse function of  $y=e^x$<br>
-      we define it as  $w=lnx$<br>
+      we define it as  $w=\ln x$<br>
       so  $e^w=x$<br>
       $$\dfrac{d}{dx}e^w=\dfrac{d}{dx}x$$
       $$(\dfrac{d}{dw}e^w)(\dfrac{dw}{dx})=1$$
       $$\dfrac{dw}{dx}=\dfrac{1}{e^w}=\dfrac{1}{x}$$
-      $$\dfrac{d}{dx}lnx=\dfrac{1}{x}$$
+      $$\dfrac{d}{dx}\ln x=\dfrac{1}{x}$$
 - as we have defined $e^x$ and $lnx$ , let's see what happened:<br>
-      $$\dfrac{d}{dx}a^x=\dfrac{d}{dx}(e^{lna})^x=\dfrac{d}{dx}e^{xlna}=lna·e^{xlna}=a^xlna$$
-      so far , we have known $M(a)$ is what : $$M(a)=lna$$
+      $$\dfrac{d}{dx}a^x=\dfrac{d}{dx}(e^{\ln a})^x=\dfrac{d}{dx}e^{xlna}=lna·e^{x\ln a}=a^x\ln a$$
+      so far , we have known $M(a)$ is what : $$M(a)=\ln a$$
 - sometimes when we need to compute $\dfrac{d}{dx}u$ , we can use the function '$ln$'<br>
       **EX:**<br>
-      $$\dfrac{d}{dx}lnu=(\dfrac{d}{du}lnu)(\dfrac{du}{dx}=)\dfrac{1}{u}\dfrac{du}{dx}$$
-      $$(lnu)'=\dfrac{u'}{u}$$
+      $$\dfrac{d}{dx}\ln u=(\dfrac{d}{du}\ln u)(\dfrac{du}{dx})=\dfrac{1}{u}\dfrac{du}{dx}$$
+      $$(\ln u)'=\dfrac{u'}{u}$$
 - let's take $u=a^x$:<br>
       $$lnu=xlna$$
-      $$(lnu)'=lna$$
-      $$\dfrac{u'}{u}=lna$$
-      $$u'=(a^x)'=u·lna=a^xlna$$
+      $$(\ln u)'=\ln a$$
+      $$\dfrac{u'}{u}=\ln a$$
+      $$u'=(a^x)'=u·lna=a^x\ln a$$
     we have proved that again<br>
       **another EX:**<br>
       $$v=x^x$$
-      $$lnv=xlnx$$
-      $$(lnv)'=\dfrac{v'}{v}=1+lnx$$
-      $$\dfrac{d}{dx}x^x=x^x(1+lnx)$$
+      $$lnv=x\ln x$$
+      $$(\ln v)'=\dfrac{v'}{v}=1+\ln x$$
+      $$\dfrac{d}{dx}x^x=x^x(1+\ln x)$$
     the method we sove it is ***moving exponents***<br>
 - yet we still don't know what is '$e$'<br>
       let's see something different:<br>
       $$\lim_{n \to +\infty}(1+\dfrac{1}{n})^n$$
       let's use the method we called ***moving expoenents***:<br>
-      $$ln((1+\dfrac{1}{n})^n)=nln(1+\dfrac{1}{n})$$
-      if we take $\Delta x$ as $\dfrac{1}{n}$ (as when $n \to =\infty$ , $\Delta x \to 0$)<br><br>
-      we get :
-      $$(1+\dfrac{1}{n})^n=\dfrac{1}{\Delta x}ln(1+\Delta x)$$
-      something different emerging:
-      $$=\dfrac{ln(1+\Delta x)-ln1}{\Delta x}$$
-      it seems familiar<br>
-      $$\lim_{n \to +\infty}ln((1+\dfrac{1}{n})^n)=\lim_{\Delta x \to 0 }\dfrac{ln(1+\Delta x)-ln1}{\Delta x}$$
-      $$=(lnx)'|_{x=1}$$
+      $$\ln((1+\dfrac{1}{n})^n)=n\ln(1+\dfrac{1}{n})$$
+      If we take $\Delta x$ as $\dfrac{1}{n}$ (as when $n \to \infty$, $\Delta x \to 0$), we get:
+
+          $$\ln\left((1+\dfrac{1}{n})^n\right)=\dfrac{1}{\Delta x}\ln(1+\Delta x)$$
+
+      Something different emerging:
+
+      $$=\dfrac{\ln(1+\Delta x)-\ln 1}{\Delta x}$$
+
+      It seems familiar:
+
+      $$\lim_{n \to +\infty}\ln\left((1+\dfrac{1}{n})^n\right)=\lim_{\Delta x \to 0}\dfrac{\ln(1+\Delta x)-\ln 1}{\Delta x}$$
+
+      $$=(\ln x)'\Big|_{x=1}$$
+
       $$=1$$
-      then
-      $$\lim_{n \to +\infty}((1+\dfrac{1}{n})^n)=e$$
-      amazingly!we get '$e$'!<br>
-      obviously we can use the limit to compute the accurate number of '$e$'<br>
-      meanwhile , the limit above is an important limit equation.<br>
+
+      Then:
+
+      $$\lim_{n \to +\infty}\left(1+\dfrac{1}{n}\right)^n=e$$
+
+Amazingly! We get $e$!
+
+Meanwhile, the limit above is an important limit equation.
+
       
 ## 一点感想
 
@@ -95,8 +105,8 @@
 ## 明天计划
 
 - MIT 继续<br>
-- 貌似之前写的明日计划很全面但是都没开始呢难,<br>
-      道真的要等到军训结束正式开始上课了吗<br>
+- 貌似之前写的明日计划很全面但是都没开始呢,<br>
+      难道真的要等到军训结束正式开始上课了吗<br>
 
 ## SOMETHING ELSE
       
