@@ -56,7 +56,8 @@
 
   <script>
     const src = document.getElementById('markdown-content').textContent;
-    document.getElementById('rendered').innerHTML = marked.parse(src);
+    document.getElementById('rendered').innerHTML = marked.parse(src, { breaks: true });
+
   </script>
 </body>
 </html>
