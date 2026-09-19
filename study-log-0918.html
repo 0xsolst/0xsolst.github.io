@@ -57,39 +57,37 @@
       $$\dfrac{d}{dx}\ln x=\dfrac{1}{x}$$
 - as we have defined $e^x$ and $lnx$ , let's see what happened:
       
-      $$\dfrac{d}{dx}a^x=\dfrac{d}{dx}(e^{\ln a})^x=\dfrac{d}{dx}e^{x\ln a}=\ln a \cdot e^{x\ln a}=a^x\ln a$$
+      $$\dfrac{d}{dx}a^x=\dfrac{d}{dx}(e^{\ln a})^x=\dfrac{d}{dx}e^{x\ln a}=\ln a \cdot e^{x\ln a}=a^x\ln a $$
       so far , we have known $M(a)$ is what : 
-      $$M(a)=\ln a$$
+      $$ M(a)=\ln a $$
 - sometimes when we need to compute $\dfrac{d}{dx}u$ , we can use the function '$ln$'
       
       **EX:**
-      
-      $$\dfrac{d}{dx}\ln u=(\dfrac{d}{du}\ln u)(\dfrac{du}{dx})=\dfrac{1}{u}\dfrac{du}{dx}$$
-      $$(\ln u)'=\dfrac{u'}{u}$$
+      $$ \dfrac{d}{dx}\ln u=(\dfrac{d}{du}\ln u)(\dfrac{du}{dx})=\dfrac{1}{u}\dfrac{du}{dx} $$
+      $$ (\ln u)'=\dfrac{u'}{u} $$
 - let's take $u=a^x$:
       
-      $$\ln u=x\ln a$$
-      $$(\ln u)'=\ln a$$
-      $$\dfrac{u'}{u}=\ln a$$
-      $$u'=(a^x)'=u·lna=a^x\ln a$$
+      $$ \ln u=x\ln a $$
+      $$(\ln u)'=\ln a $$
+      $$ \dfrac{u'}{u}=\ln a $$
+      $$ u'=(a^x)'=u·lna=a^x\ln a $$
     we have proved that again
       
       **another EX:**
-      
-      $$v=x^x$$
-      $$\ln v=x\ln x$$
-      $$(\ln v)'=\dfrac{v'}{v}=1+\ln x$$
-      $$\dfrac{d}{dx}x^x=x^x(1+\ln x)$$
+      $$ v=x^x $$
+      $$ \ln v=x\ln x $$
+      $$ (\ln v)'=\dfrac{v'}{v}=1+\ln x $$
+      $$ \dfrac{d}{dx}x^x=x^x(1+\ln x) $$
     the method we solve it is ***moving exponents***
       
 - yet we still don't know what is '$e$'
       
       let's see something different:
       
-      $$\lim_{n \to +\infty}(1+\dfrac{1}{n})^n$$
+      $$ \lim_{n \to +\infty}(1+\dfrac{1}{n})^n $$
       let's use the method we called ***moving exponents***:
       
-      $$\ln((1+\dfrac{1}{n})^n)=n\ln(1+\dfrac{1}{n})$$
+      $$ \ln((1+\dfrac{1}{n})^n)=n\ln(1+\dfrac{1}{n}) $$
       If we take $\Delta x$ as $\dfrac{1}{n}$ (as when $n \to \infty$, $\Delta x \to 0$), we get:
 
           $$\ln\left((1+\dfrac{1}{n})^n\right)=\dfrac{1}{\Delta x}\ln(1+\Delta x)$$
@@ -160,7 +158,7 @@ Meanwhile, the limit above is an important limit equation.
 
   <script>
     const src = document.getElementById('markdown-content').textContent;
-    document.getElementById('rendered').innerHTML = marked.parse(src);
+    document.getElementById('rendered').innerHTML = marked.parse(src, { breaks: true });
   </script>
 </body>
 </html>
