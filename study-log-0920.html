@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>学习日志：2026年9月20日</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    MathJax = { tex: { inlineMath: [['$','$'], ['\\(','\\)']] } };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <h1 class="title">学习日志：2026年9月20日</h1>
+    <p class="meta">2026年9月20日 · 主题：学委上任 · 开始线代</p>
+
+    <!-- ═══════ 正文写作区：从这里往下写 markdown ═══════ -->
+    <script type="text/markdown" id="markdown-content">
+# 今天做了什么
+
+选上班委啦，我当选学习委员了 :D
+
+今天是"上任第零天"，把竞选 PPT 里的承诺拆成了能落地的事：
+- 拆成一份工作清单，按周推进
+- 在 U 盘里搭好了学委工作文件夹（通知存档 / 课程资源 / 教学反馈 / 班级事务）
+
+## 学习内容
+
+- 发现大一上的数学是**两门并行**的：高等数学（微积分）+ 线性代数。之前一直只盯着微积分，线代被我漏掉了
+- 重新整理了两门课的资源：中文教材跟学校进度，MIT 公开课 + 3Blue1Brown 用来理解概念、练英语
+- 开始预习线性代数，先看 3Blue1Brown《线性代数的本质》前几集建立直觉
+- review of differentiation
+- applications of differentiation
+
+## 我来讲一下
+
+- two methods to deal with $\dfrac{d}{dx}x^r%
+  *method 1:expoenets*
+$$ \dfrac{d}{dx}x^r$$
+$$=\dfrac{d}{dx}e^{x\ln x}$$
+$$=e^{x\ln x} \cdot \dfrac{r}{x}$$
+$$=x^r \codt \dfrac{r}{x}=rx^{r-1}$$
+  *method 2:logarrithms*
+$$ u=x^r$$
+$$\ln u =r\ln x$$
+$$(\ln u)'=\dfrac{u'}{u}=\dfrac{r}{x}$$
+$$u'=x^r \cdot \dfrac{r}{x}=rx^{r-1}$$
+- linear algebra
+
+一种感受：竟然可以这样！
+
+## 一点感想
+
+微积分跟 MIT 18.01 学到后面，感觉进度偏慢，和学校高数 A1 的节奏对不上。想通了：英文公开课负责"吃透概念 + 练英语"，跟学校进度还是得靠中文教材刷题，两条腿走路。
+
+## 明天计划
+
+- 明天开始正式上课
+- 继续看线代本质，跟上学校《线性代数 A》的进度
+    </script>
+    <!-- ═══════ 正文写作区结束 ═══════ -->
+
+    <div class="content" id="rendered"></div>
+
+    <div class="comments">
+      <script src="https://giscus.app/client.js"
+        data-repo="0xsolst/0xsolst.github.io"
+        data-repo-id="R_kgDOUb4CRg"
+        data-category="General"
+        data-category-id="DIC_kwDOUb4CRs4DFvc9"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </div>
+
+    <p class="back"><a href="index.html">← 返回首页</a></p>
+  </div>
+
+  <script>
+    const src = document.getElementById('markdown-content').textContent;
+    document.getElementById('rendered').innerHTML = marked.parse(src, { breaks: true });
+  </script>
+</body>
+</html>
