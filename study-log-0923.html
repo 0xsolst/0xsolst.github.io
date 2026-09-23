@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>学习日志：2026年9月23日</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    MathJax = { tex: { inlineMath: [['$','$'], ['\\(','\\)']] } };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <h1 class="title">学习日志：2026年9月23日</h1>
+    <p class="meta">2026年9月23日 · ε-N 语言 · 东湖夜骑</p>
+
+    <script type="text/markdown" id="markdown-content">
+# 又是平平无奇又有点意思的一天
+
+## 军事理论课（照旧背单词）
+
+这课我已经快变成「单词课」了。老师在上面讲，我在下面背。也不是不尊重老师，主要是……背单词这件事最近有点上瘾。
+
+## 高数：ε-N 语言，它来了
+
+高数课讲到**数列极限的 ε-N 语言**了，就是那个「任给 $\varepsilon > 0$，总存在正整数 $N$……」的玩意儿。
+
+老实说第一次见的时候我有点懵：极限不是「无限接近」就行了吗，为什么要搞得这么严谨？
+
+后来想明白了，这套语言的意义在于——**把「无限接近」这种模糊的说法，变成一句谁都没法抬杠的严格定义**：
+
+$$\lim_{n \to \infty} x_n = a \iff \forall \varepsilon > 0,\ \exists N \in \mathbb{N},\ \forall n > N,\ |x_n - a| < \varepsilon$$
+
+翻译成人话：不管你把「接近」的标准定得多苛刻（ε 多小），我都能找到一个点 $N$，从它往后所有项都落在那个圈里。
+
+早上图书馆自习又补了**函数的二次近似**，算是泰勒展开的前菜：
+
+$$f(x) \approx f(a) + f'(a)(x-a) + \frac{f''(a)}{2}(x-a)^2$$
+
+用切线加曲率去逼近一条曲线，越学越觉得微积分这套东西是真的优雅。
+
+## 晚上：量子世界探秘，退课了
+
+晚上本来有节通识课叫「量子世界探秘」，名字听着挺唬人，结果……没意思，我又退了。
+
+这学期选课跟开盲盒似的，选一门、听一节、退一门。希望下次能开到个好课。
+
+## 高光时刻：东湖夜骑
+
+晚上从**凌波门**出去，到**东湖**边骑自行车吹风。
+
+九月底的武汉，白天还热，晚上湖边已经有凉风了。骑车、吹风、什么都不想，这种时刻才是真正在充电。
+
+骑到一半又折回学校，一路骑到**街道口**买了点吃的。这么一算，今天骑车的里程还挺可观，四舍五入等于运动了。
+
+---
+
+今天没什么特别「硬核」的学习，但也算**忙碌里偷了点松弛**。ε-N 语言还得再消化消化，写作业前争取把它彻底搞懂。
+    </script>
+
+    <div class="content" id="rendered"></div>
+
+    <div class="comments">
+      <script src="https://giscus.app/client.js"
+        data-repo="0xsolst/0xsolst.github.io"
+        data-repo-id="R_kgDOUb4CRg"
+        data-category="General"
+        data-category-id="DIC_kwDOUb4CRs4DFvc9"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </div>
+
+    <p class="back"><a href="index.html">← 返回首页</a></p>
+  </div>
+
+  <script>
+    const src = document.getElementById('markdown-content').textContent;
+    document.getElementById('rendered').innerHTML = marked.parse(src, { breaks: true });
+  </script>
+</body>
+</html>
