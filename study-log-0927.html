@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>学习日志：2026年9月27日</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    MathJax = { tex: { inlineMath: [['$','$'], ['\\(','\\)']] } };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <h1 class="title">学习日志：2026年9月27日</h1>
+    <p class="meta">2026年9月27日 · CTF 首题 · 矩阵 + 反导数 · 夜跑</p>
+
+    <script type="text/markdown" id="markdown-content">
+# 第一道 CTF，上手了
+
+今天的主线还是**线代 + 微积分**，但真正让我兴奋的是——终于上手了第一道 **CTF 题**。
+
+## 线代：矩阵
+
+继续往下啃，学了**矩阵**、**单位矩阵**，还有矩阵的加法、数乘、乘法这些运算。大部分都顺下来了，就是**「两个矩阵乘积的转置」**这块还有点绕，没完全吃透，先记个待办，回头再补。
+
+## 微积分：反导数
+
+微积分这边学了前置知识——**反导数（antiderivative）**。算是给后面做铺垫，概念先接住，慢慢来。
+
+## CTF：第一道题，上手了
+
+今天最大的事，是终于打开了 **CTF 的第一道题**。
+
+之前啃了一堆概念、看了不少教程，总觉得还没准备好。真上手才发现——**学一百遍不如做一遍**。直接开题、自己解密、自己查、自己凑出答案，那个过程里学到的，比之前啃资料实在多了。
+
+一口气过了三道 **PWN 题**，说实话**挺有意思的**。就是那种「题目摆在那，你得自己去解密、去搞懂原理、最后拿到答案」的感觉，跟做数学题完全不是一个体验。
+
+## 晚上：鸡蛋灌饼 + 跑步
+
+晚上照旧，**鸡蛋灌饼**，然后去操场**跑步**。
+
+图书馆 + 操场的组合，感觉自己在**一点点变好（become better）**。
+
+---
+
+明天就恢复上课了，有些课还是得去听一下的。
+    </script>
+
+    <div class="content" id="rendered"></div>
+
+    <div class="comments">
+      <script src="https://giscus.app/client.js"
+        data-repo="0xsolst/0xsolst.github.io"
+        data-repo-id="R_kgDOUb4CRg"
+        data-category="General"
+        data-category-id="DIC_kwDOUb4CRs4DFvc9"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </div>
+
+    <p class="back"><a href="index.html">← 返回首页</a></p>
+  </div>
+
+  <script>
+    const src = document.getElementById('markdown-content').textContent;
+    document.getElementById('rendered').innerHTML = marked.parse(src, { breaks: true });
+  </script>
+</body>
+</html>
