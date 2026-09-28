@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>学习日志：2026年9月28日</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    MathJax = { tex: { inlineMath: [['$','$'], ['\\(','\\)']] } };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <h1 class="title">学习日志：2026年9月28日</h1>
+    <p class="meta">2026年9月28日 · 高数极限 · 太极拳 · 文艺部审核</p>
+
+    <script type="text/markdown" id="markdown-content">
+# ε-N 和极限性质，还是有点绕
+
+今天上午高数课，继续在**极限**这一块打转。除了接着讲 **ε-N 语言**，还新上了**极限的性质**——唯一性、有界性、保号性、四则运算那一串。
+
+老实说，**这里我觉得不是很好懂**。ε-N 那套「任给一个 ε、总能找到一个 N」的逻辑，到现在还是有点绕：极限不就是"无限接近"吗，为啥非要说得这么绕嘴？
+
+后来慢慢咂摸出一点味来——它其实是想把"无限接近"这种**说不清的直觉**，变成一句**谁也反驳不了的严格定义**。既然要记，那就把定义和性质用 LaTeX 规规矩矩写一遍，后面刷题的时候再回头磨：
+
+## 极限的 ε-N 定义
+
+$$\lim_{n \to \infty} x_n = a \iff \forall \varepsilon > 0,\ \exists N \in \mathbb{N},\ \forall n > N,\ \left| x_n - a \right| < \varepsilon$$
+
+翻译成人话：不管你把"接近"的标准定得多苛刻（$\varepsilon$ 多小），我都能找到一个位置 $N$，从它往后**所有项**都老老实实落进那个圈里，一个都不跑出去。
+
+## 极限的性质
+
+**① 唯一性**：一个收敛数列的极限是唯一的。若 $\lim_{n\to\infty} x_n = a$ 且 $\lim_{n\to\infty} x_n = b$，则 $a = b$。
+
+翻译成人话：一个数列不可能"同时越来越接近"两个不同的数，就像一个人不能同时往两个方向走。
+
+**② 有界性**：收敛数列一定有界。
+
+$$\exists M > 0,\ \forall n \in \mathbb{N},\ \left| x_n \right| \le M$$
+
+翻译成人话：所有项都被夹在一个有限的范围 $[-M, M]$ 里，不会跑到天上去。不过反过来不成立——有界的不一定收敛（比如来回跳的）。
+
+**③ 保号性**：若 $\lim_{n\to\infty} x_n = a > 0$，则存在某个 $N$，当 $n > N$ 时，恒有 $x_n > 0$。（$a < 0$ 时同理，全变负的）
+
+翻译成人话：如果最后逼近的是个**正数**，那从某一项开始，这些项就都是正的，不会再掉到 0 以下。
+
+**④ 四则运算法则**：若 $\lim_{n\to\infty} x_n = a$，$\lim_{n\to\infty} y_n = b$，则
+
+$$\lim_{n\to\infty}(x_n \pm y_n) = a \pm b$$
+
+$$\lim_{n\to\infty}(x_n \cdot y_n) = a \cdot b$$
+
+$$\lim_{n\to\infty}\frac{x_n}{y_n} = \frac{a}{b}\quad (b \ne 0)$$
+
+翻译成人话：求极限可以"拆开算"，加减乘除分别取完极限再组合就行，除法记得分母的极限不能是 0。
+
+## 下午：太极拳 + 跑步，过瘾
+
+下午体育课，**太极拳**还挺有意思的，比想象中好玩。之后的锻炼跑步也**很过瘾**，出点汗挺爽的。
+
+## 晚上：图书馆复习 + 文艺部审核
+
+晚上去图书馆，又把高数**复习了一遍**。越复习越觉得——**光看懂不行，还是得刷题**。定义背下来是一回事，拿到题能顺手用出来，是另一回事。
+
+回宿舍前还去参加了**文艺部对迎新晚会主持人的审核**。这算是我**第一次正式参与文艺部的工作**吧，虽然就是坐在那儿看、提意见，但感觉挺新鲜的，也算上了道。
+
+## 深夜：pwn 第四题，卡住了
+
+现在正在做**第四道 pwn 题**。说实话，这题**太吃操作了**——好多地方**看不懂**，好多操作也都还不会。今天大概率是啃不下来了，先记下来，明天继续磨。
+
+---
+
+ε-N 和极限性质还没彻底搞懂，pwn 也卡在第四题。不过太极拳耍得开心，文艺部也开了个工，今天不算白过。
+    </script>
+
+    <div class="content" id="rendered"></div>
+
+    <div class="comments">
+      <script src="https://giscus.app/client.js"
+        data-repo="0xsolst/0xsolst.github.io"
+        data-repo-id="R_kgDOUb4CRg"
+        data-category="General"
+        data-category-id="DIC_kwDOUb4CRs4DFvc9"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </div>
+
+    <p class="back"><a href="index.html">← 返回首页</a></p>
+  </div>
+
+  <script>
+    const src = document.getElementById('markdown-content').textContent;
+    document.getElementById('rendered').innerHTML = marked.parse(src, { breaks: true });
+  </script>
+</body>
+</html>
